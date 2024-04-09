@@ -1,5 +1,13 @@
 #All configuration goes here
+app:
+  file:
+    upload-dir: ./uploads/files
 spring: 
+ servlet:
+    multipart:
+      enabled: 'true '
+      file-size-threshold: 1KB
+      max-file-size: 300MB 
  datasource: 
   url: jdbc:mysql://${STAFF_DB_HOST:localhost}:${STAFF_DB_PORT:3306}/${STAFF_DB:staff_management_module}
   driver-class-name: com.mysql.cj.jdbc.Driver
