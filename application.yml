@@ -1,12 +1,3 @@
-#All configuration goes here
-spring: 
- datasource: 
-  url: jdbc:mysql://${STAFF_DB_HOST:localhost}:${STAFF_DB_PORT:3306}/${STAFF_DB:staff_management_module}
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  username: ${STAFF_DB_USER_NAME:root}
-  password: ${STAFF_DB_USER_PASSWORD:root}
- 
- config:
-    activate:
-      on-profile:
-      - dev
+spring:
+  application:
+    name: DEMO-SERVICE
